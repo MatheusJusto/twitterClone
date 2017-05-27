@@ -62,15 +62,16 @@
 				<div class="col-md-6">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<div class="input-group">
-								<input type="text" class="form-control" id="texto_tweet" placeholder="O que esta acontecendo agora?" max-length="140">
+							<form id="form_procurar_pessoas" class="input-group">
+								<input type="text" class="form-control" id="nome_pessoa" name="nome_pessoa" placeholder="Quem você está procurando?" max-length="140">
 								<span class="input-group-btn">
-									<button type="button" id="btn_tweet" class="btn btn-default">TWEET</button>
+									<button type="button" id="btn_procurar_pessoa" class="btn btn-default">TWEET</button>
 								</span>
-							</div>
+							</form>
 						</div>
+						
 					</div>
-					<div id="tweets" class="list-group"></div>
+					<div id="pessoas" class="list-group"></div>
 				</div>
 
 				<div class="col-md-3">
@@ -83,7 +84,7 @@
 				</div>
 					
 	    </div>
-		<script src="main.js"></script>
+		<script src="search.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 	
