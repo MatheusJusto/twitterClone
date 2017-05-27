@@ -6,11 +6,9 @@ $( 'document' ).ready( function () {
             $.ajax( {
                 url: 'get_pessoa.php',
                 method: 'post',
-                data: { texto_tweet: $(' #form_procurar_pessoas' ).val() },
-
-                    success: function(data) {
-                        $( '#texto_tweet' ).val( '' );
-                        atualizaTweet();
+                data: $( '#form_procurar_pessoas' ).serialize(),
+                    success: function (data) {
+                        alert($( '#pessoas' ).html(data));
                     }
             });
         }
